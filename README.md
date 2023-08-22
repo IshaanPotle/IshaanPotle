@@ -2,13 +2,13 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Heyy+There!+👋;+I'm+Ishaan!;" />
 </h1>
 
-<h3 align="center">A persistent learner</h3>
+<h3 align="center">A persistent learner always intrigued by new technologies</h3>
 
 <br/>
 
 <div align="center">
  
- 🔭 I’m currently working on **a roadmap website**
+ 🔭 I’m currently working on **expanding my skillset**
  
  🌱 I’m currently learning **Docker, Heroku**
  
@@ -30,14 +30,14 @@
 <br/>
 <div align="center">
     <img src="https://skillicons.dev/icons?i=github,python,javascript,c,java,bootstrap" /><br>
-    <img src="https://skillicons.dev/icons?i=bootstrap,html,css,vscode,figma,git,notion,pandas,numpy,matplotlib,jupyter,seaborn" /><br>
+    <img src="https://skillicons.dev/icons?i=bootstrap,html,css,vscode,figma,git,heroku,docker" /><br>
 </div>
 
 <br/>
 <hr/>
 
 <div align="center">
-  <h2>🐍 My Contributions 🐍</h2>
+  <h2>⭐ My Contributions ⭐</h2>
   <br>
   <img alt="snake eating my contributions" src="https://github.com/ishaanpotle/ishaanpotle/blob/output/github-contribution-grid-snake.svg" />
   <br/><br/><br/>
