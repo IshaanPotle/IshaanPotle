@@ -10,7 +10,7 @@
  
  🔭 I’m currently working on **expanding my skillset**
  
- 🌱 I’m currently learning **Docker, Heroku**
+ 🌱 I’m currently learning **Docker, PostgreSQL**
  
  </div>
  
@@ -30,7 +30,7 @@
 <br/>
 <div align="center">
     <img src="https://skillicons.dev/icons?i=github,python,javascript,c,java,bootstrap,mysql" /><br>
-    <img src="https://skillicons.dev/icons?i=bootstrap,html,css,vscode,figma,git,heroku,docker" /><br>
+    <img src="https://skillicons.dev/icons?i=bootstrap,html,css,vscode,figma,git,heroku,docker,postgres" /><br>
 </div>
 
 <br/>
