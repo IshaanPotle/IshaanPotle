@@ -56,6 +56,30 @@
 </div>
 
 ---
+---
+
+<h2 align="center">📌 Featured Projects</h2>
+
+<div align="center">
+  <a href="https://github.com/IshaanPotle/federated-health-risk-system">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=federated-health-risk-system&theme=react" />
+  </a>
+  <a href="https://github.com/IshaanPotle/graph-aml-engine">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=graph-aml-engine&theme=react" />
+  </a>
+</div>
+
+<div align="center">
+  <a href="https://github.com/IshaanPotle/air-quality-forecasting">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=air-quality-forecasting&theme=react" />
+  </a>
+  <a href="https://github.com/IshaanPotle/supply-chain-resilience">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=supply-chain-resilience&theme=react" />
+  </a>
+</div>
+
+
+---
 
 <h2 align="center">⚡ GitHub Stats</h2>
 <div align="center">
