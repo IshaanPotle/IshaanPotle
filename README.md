@@ -1,66 +1,32 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Heyy+There!+👋;+I'm+Ishaan!;" />
-</h1>
+Ishaan Potle
+Data Science + Systems | Applied AI | Health & Risk Modeling
 
-<h3 align="center">Data Science + Systems | Applied AI | Health & Risk Modeling</h3>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=IshaanPotle&label=Profile%20views&color=0e75b6" alt="Profile Views"/> <img src="https://img.shields.io/github/followers/IshaanPotle?label=Followers&style=social" alt="Followers"/> <img src="https://img.shields.io/badge/Pronouns-He%2Fhim-blue" alt="Pronouns"/> </p>
+🧑‍💻 About Me
+Computer Science @ Stony Brook University with a passion for privacy-first AI systems and graph-based learning.
 
-<br/>
+Building production-grade ML platforms that span the full stack—from FastAPI back-ends to React/Streamlit front-ends and cloud-native, Docker-first deployments.
 
-<div align="center">
+Currently exploring FastAPI, PostgreSQL, Docker, and advanced Graph ML techniques.
 
-🧠 Currently building:
-- **Federated Health Risk System** (privacy-first modeling for global health risks)
-- **Graph AML Engine** (fraud detection using Graph ML & GNNs)
+Portfolio ↗ https://ishaansantoshpotle.wixsite.com/portfolio
 
-🚀 Exploring: **FastAPI**, **PostgreSQL**, **Docker**, **Graph-based Learning**
+🚀 Currently Building
+Project	Tech Highlights	What It Does
+Federated Health Risk System	Flower · PyTorch · Streamlit	Privacy-preserving LSTM training on wearable & FHIR data with SHAP explainability
+Graph AML Engine	GraphSAGE · GAT · FastAPI · Docker	Real-time crypto fraud detection on transaction graphs with full-stack monitoring
+🌟 Featured Projects
+Repo	Stack	One-liner
+Bias-Resistant Resume Ranker	FastAPI · Llama 3 · Fairlearn	AI platform that scores resumes, audits DEI metrics, and rewrites text to remove bias
+Data Science Sandbox	React (TS) · FastAPI · Kubernetes	Guided, end-to-end experimentation platform with interactive visualizations and deployment hooks
+LLM Medical Chatbot	Vector Search · LLM	Retrieval-augmented chatbot answering medical questions from trusted datasets
+Global Food Supply Chain Resilience Analyzer	Airflow · LSTM · ARIMA	Forecasts global food-supply disruptions from 300 k+ climate & geopolitical signals
+Explore all repositories at https://github.com/IshaanPotle?tab=repositories
 
-</div>
+⚒️ Tech & Tools
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logoAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi](https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=dockerSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=whiteields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor://img.shields.io/badge/K8s-326ce5?style=for-the-badge&logo=kubernetes&logoColorimg.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=whiteHub Stats
 
-<br/>
-
-<div align="center"> 
-  <a href="mailto:ishaan272002@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
-  </a>
-  <a href="https://www.linkedin.com/in/ishaan-potle-15b0741ba/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-</div>
-
-<hr/>
-
-<h2 align="center">⚒️ Tech & Tools ⚒️</h2>
-<br/>
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,fastapi,docker,postgres,tensorflow,pyTorch,git,github,js,html,css" /><br>
-  <img src="https://skillicons.dev/icons?i=mysql,vscode,figma,airflow,java,c" />
-</div>
-
-<br/>
-<hr/>
-
-<div align="center">
-  <h2>📈 Contributions</h2>
-  <br>
-  <img alt="snake eating my contributions" src="https://github.com/ishaanpotle/ishaanpotle/blob/output/github-contribution-grid-snake.svg" />
-</div>
-
-<br/>
-<hr/>
-
-<h2 align="center">📊 GitHub Stats</h2>
-<br>
-<div align="center">
-  <img width=390 src="https://streak-stats.demolab.com/?user=ishaanpotle&count_private=true&theme=react&border_radius=10" />
-  <img width=390 src="https://github-readme-stats.vercel.app/api?username=ishaanpotle&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" />
-  <br/><br/>
-  <img width=325 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ishaanpotle&hide=HTML&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" />
-</div>
-
-<br/><hr/>
-
-<h3 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=25&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Thanks+for+visiting!+✌️;+Let’s+connect+on+LinkedIn+or+collab+on+a+project!">
-</h3>
-
-<br/>
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=IshaanPotle&show_icons=true&theme=algolia" width="48%"/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=IshaanPotle&layout=compact&theme=algolia" width="48%"/> </p>
+🤝 Connect With Me
+<p align="center"> <a href="https://www.linkedin.com/in/ishaan-potle"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a> <a href="mailto:ishaan.potle@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a> <a href="https://ishaansantoshpotle.wixsite.com/portfolio"><img src="https://img.shields.io/badge/Portfolio-FFA500?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Portfolio"></a> </p>
+*Built with ❤️ using Markdown, shields.io badges, and GitHub Readme Stats.*
