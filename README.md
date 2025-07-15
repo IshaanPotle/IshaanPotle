@@ -61,10 +61,10 @@
 <h2 align="center">📌 Featured Projects</h2>
 
 <div align="center">
-  <a href="https://github.com/IshaanPotle/federated-health-risk-system">
+  <a href="[https://github.com/IshaanPotle/federated-health-risk-system](https://github.com/IshaanPotle/Federated-Health-Risk-Prediction-System)">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=federated-health-risk-system&theme=react" />
   </a>
-  <a href="https://github.com/IshaanPotle/graph-aml-engine">
+  <a href="[https://github.com/IshaanPotle/graph-aml-engine](https://github.com/IshaanPotle/Graph-Neural-Network-AML-Detection-Engine)">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=graph-aml-engine&theme=react" />
   </a>
 </div>
