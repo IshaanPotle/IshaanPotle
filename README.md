@@ -39,7 +39,7 @@
 <h2 align="center">⚒️ Tech Stack & Tools</h2>
 <br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=python,fastapi,docker,postgres,tensorflow,pytorch,airflow,git,github,vscode,js,html,css,c,java,figma" />
+    <img src="https://skillicons.dev/icons?i=python,c++,fastapi,docker,postgres,tensorflow,pytorch,airflow,git,js" />
 </div>
 
 ---
@@ -56,29 +56,38 @@
 </div>
 
 ---
+![Leetcode Stats](https://leetcard.jacoblin.cool/IshaanPotle?theme=nord)
+
 ---
 
 <h2 align="center">📌 Featured Projects</h2>
 
 <div align="center">
-  <a href="[https://github.com/IshaanPotle/federated-health-risk-system](https://github.com/IshaanPotle/Federated-Health-Risk-Prediction-System)">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=federated-health-risk-system&theme=react" />
+  <a href="https://github.com/IshaanPotle/Federated-Health-Risk-Prediction-System">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=Federated-Health-Risk-Prediction-System&theme=react" />
   </a>
-  <a href="[https://github.com/IshaanPotle/graph-aml-engine](https://github.com/IshaanPotle/Graph-Neural-Network-AML-Detection-Engine)">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=graph-aml-engine&theme=react" />
+  <a href="https://github.com/IshaanPotle/Graph-Neural-Network-AML-Detection-Engine">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=Graph-Neural-Network-AML-Detection-Engine&theme=react" />
+  </a>
+  <a href="https://github.com/IshaanPotle/Data-Science-Sandbox">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=Data-Science-Sandbox&theme=react" />
+  </a>
+  <a href="https://github.com/IshaanPotle/LLM_Medical-Chatbot">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=LLM_Medical-Chatbot&theme=react" />
+  <a href="https://github.com/IshaanPotle/Bias-Resistant-Resume-Ranker">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=Bias-Resistant-Resume-Ranker&theme=react" />
+  </a>
+  <a href="https://github.com/IshaanPotle/Global-Food-Supply-Chain-Resilience-Analyzer">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=Global-Food-Supply-Chain-Resilience-Analyzer&theme=react" />
   </a>
 </div>
-
-<div align="center">
-  <a href="https://github.com/IshaanPotle/air-quality-forecasting">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=air-quality-forecasting&theme=react" />
+ <!-- <a href="https://github.com/IshaanPotle/Global-Food-Supply-Chain-Resilience-Analyzer">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=Global-Food-Supply-Chain-Resilience-Analyzer&theme=react" />
   </a>
-  <a href="https://github.com/IshaanPotle/supply-chain-resilience">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=supply-chain-resilience&theme=react" />
+  <a href="https://github.com/IshaanPotle/Graph-Neural-Network-AML-Detection-Engine">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IshaanPotle&repo=Graph-Neural-Network-AML-Detection-Engine&theme=react" />
   </a>
-</div>
-
-
+      -->
 ---
 
 <h2 align="center">⚡ GitHub Stats</h2>
