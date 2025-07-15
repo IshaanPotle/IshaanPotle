@@ -9,79 +9,64 @@
 
 <div align="center">
  
- 🔭 I’m currently working on **expanding my skillset**
- 
+ 🔭 I’m currently working on **expanding my skillset**  
  🌱 I’m currently learning **Docker, PostgreSQL**
- 
- </div>
- 
-
-🧠 Currently building:
-- **Federated Health Risk System** (privacy-first modeling for global health risks)
-- **Graph AML Engine** (fraud detection using Graph ML & GNNs)
-
-🚀 Exploring: **FastAPI**, **PostgreSQL**, **Docker**, **Graph-based Learning**
 
 </div>
 
 <br/>
+
+### 🧠 Currently Building
+- 🚑 **Federated Health Risk System** – Privacy-first modeling of global health threats using federated learning  
+- 🕸️ **Graph AML Engine** – GNN-based anti-money laundering graph system for fraud detection
+
+### 🚀 Exploring
+`FastAPI` • `PostgreSQL` • `Docker` • `Graph Learning` • `System Design`
+
+---
 
 <div align="center"> 
 <a href="mailto:ishaan272002@gmail.com">
 <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
 </a>
 <a href="https://www.linkedin.com/in/ishaan-potle-15b0741ba/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
-  </a>
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 </div>
 
- <hr/>
- 
-<h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
-<hr/>
+---
 
-<h2 align="center">⚒️ Tech & Tools ⚒️</h2>
+<h2 align="center">⚒️ Tech Stack & Tools</h2>
 <br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=github,python,javascript,c,java,bootstrap,mysql" /><br>
-    <img src="https://skillicons.dev/icons?i=bootstrap,html,css,vscode,figma,git,heroku,docker,postgres" /><br>
-  <img src="https://skillicons.dev/icons?i=python,fastapi,docker,postgres,tensorflow,pyTorch,git,github,js,html,css" /><br>
-  <img src="https://skillicons.dev/icons?i=mysql,vscode,figma,airflow,java,c" />
+    <img src="https://skillicons.dev/icons?i=python,fastapi,docker,postgres,tensorflow,pytorch,airflow,git,github,vscode,js,html,css,c,java,figma" />
 </div>
 
-<br/>
-<hr/>
+---
 
 <div align="center">
-  <h2>⭐ My Contributions ⭐</h2>
-  <h2>📈 Contributions</h2>
-<br>
-<img alt="snake eating my contributions" src="https://github.com/ishaanpotle/ishaanpotle/blob/output/github-contribution-grid-snake.svg" />
-  <br/><br/><br/>
+  <h2>🧊 GitHub 3D Contributions</h2>
+  <br/>
+  <img src="profile-3d-contrib/profile-green.svg" alt="3D contribution calendar" />
+  <!-- You can switch this to any of these:
+       profile-green-animate.svg
+       profile-season-animate.svg
+       profile-night-view.svg
+       profile-night-rainbow.svg -->
 </div>
 
-<br/>
-<hr/>
+---
 
-
-<h2 align="center">⚡ Stats ⚡</h2>
-<h2 align="center">📊 GitHub Stats</h2>
-<br>
-<div align=center>
+<h2 align="center">⚡ GitHub Stats</h2>
+<div align="center">
   <img width=390 src="https://streak-stats.demolab.com/?user=ishaanpotle&count_private=true&theme=react&border_radius=10" alt="streak stats"/>
   <img width=390 src="https://github-readme-stats.vercel.app/api?username=ishaanpotle&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats" />
-  <br/>
-  <img width=325 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ishaanpotle&hide=HTML&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="top langs" />
+  <br/><br/>
+  <img width=325 src="https://github-readme-stats.vercel.app/api/top-langs/?username=ishaanpotle&hide=HTML&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="top langs" />
 </div>
 
-<br/><br/>
-<hr/>
-<br/><hr/>
+---
 
 <h3 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=25&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Thanks+for+visiting!+✌️;+Shoot+me+a+message+on+Linkedin!;I'm+always+down+to+collab+:)">
 </h3>
-
-<br/>
