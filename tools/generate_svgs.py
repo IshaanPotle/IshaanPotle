@@ -73,11 +73,11 @@ def hero(P):
                 op = round(rng.uniform(0.32, 0.7), 3)
                 edges.append(
                     f'<line x1="{x1}" y1="{y1:.1f}" x2="{x2}" y2="{y2:.1f}" '
-                    f'stroke="{P["wire"]}" stroke-width="1" opacity="0" '
-                    f'stroke-dasharray="{length:.1f}" stroke-dashoffset="{length:.1f}">'
-                    f'<animate attributeName="stroke-dashoffset" from="{length:.1f}" to="0" '
+                    f'stroke="{P["wire"]}" stroke-width="1" opacity="{op}" '
+                    f'stroke-dasharray="{length:.1f}" stroke-dashoffset="0">'
+                    f'<animate attributeName="stroke-dashoffset" values="{length:.1f};0" '
                     f'dur="1.05s" begin="{begin:.2f}s" fill="freeze"/>'
-                    f'<animate attributeName="opacity" from="0" to="{op}" '
+                    f'<animate attributeName="opacity" values="0;{op}" '
                     f'dur="0.9s" begin="{begin:.2f}s" fill="freeze"/>'
                     f"</line>"
                 )
@@ -100,7 +100,7 @@ def hero(P):
             b = 0.15 + li * 0.55 + k * 0.05
             c = colors[li]
             nodes.append(
-                f'<circle cx="{x}" cy="{y:.1f}" r="0" fill="{c}">'
+                f'<circle cx="{x}" cy="{y:.1f}" r="4.6" fill="{c}">'
                 f'<animate attributeName="r" values="0;6.4;4.6" keyTimes="0;0.6;1" '
                 f'dur="0.55s" begin="{b:.2f}s" fill="freeze"/>'
                 f"</circle>"
@@ -118,8 +118,8 @@ def hero(P):
 
     caps = "".join(
         f'<text x="{x}" y="264" text-anchor="middle" font-family="{MONO}" '
-        f'font-size="9" letter-spacing="1.4" fill="{P["muted"]}" opacity="0">{t}'
-        f'<animate attributeName="opacity" from="0" to="1" dur="1s" '
+        f'font-size="9" letter-spacing="1.4" fill="{P["muted"]}" opacity="1">{t}'
+        f'<animate attributeName="opacity" values="0;1" dur="1s" '
         f'begin="{0.4 + i * 0.55:.2f}s" fill="freeze"/></text>'
         for i, (x, t) in enumerate(zip(xs, ["input", "hidden", "hidden", "output"]))
     )
@@ -131,7 +131,7 @@ def hero(P):
   <title>Ishaan Potle — {esc(tagline)}</title>
   <defs>
     <clipPath id="type">
-      <rect x="{x0 - 4}" y="168" width="0" height="28">
+      <rect x="{x0 - 4}" y="168" width="{tl_len + 8}" height="28">
         <animate attributeName="width" values="0;{tl_len + 8};{tl_len + 8};0;0"
                  keyTimes="0;0.40;0.86;0.97;1" dur="11s" begin="2.2s" repeatCount="indefinite"/>
       </rect>
@@ -143,7 +143,7 @@ def hero(P):
   <g>{{nodes}}</g>
   {{caps}}
 
-  <rect x="{x0}" y="70" width="0" height="3" fill="{P['accent']}">
+  <rect x="{x0}" y="70" width="52" height="3" fill="{P['accent']}">
     <animate attributeName="width" values="0;52" dur="0.7s" fill="freeze"/>
   </rect>
 
@@ -163,8 +163,8 @@ def hero(P):
              dur="1.15s" begin="2.3s" repeatCount="indefinite"/>
   </rect>
 
-  <text x="{x0}" y="225" font-family="{MONO}" font-size="13" fill="{P['muted']}" opacity="0">M.S. Data Science @ Stony Brook University
-    <animate attributeName="opacity" from="0" to="1" dur="1.2s" begin="3.4s" fill="freeze"/>
+  <text x="{x0}" y="225" font-family="{MONO}" font-size="13" fill="{P['muted']}" opacity="1">M.S. Data Science @ Stony Brook University
+    <animate attributeName="opacity" values="0;1" dur="1.2s" begin="3.4s" fill="freeze"/>
   </text>
 </svg>
 """.replace("{edges}", "".join(edges)).replace("{pulses}", "".join(pulses)).replace(

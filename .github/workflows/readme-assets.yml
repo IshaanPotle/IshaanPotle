@@ -43,13 +43,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      # 3. Snapshot the third-party stat cards so the README never 503s.
-      #    Transparent backgrounds + Primer colours so they sit flush on the page.
+      # 3. Stats + language cards, rendered straight from GitHub's GraphQL API.
+      #    No third-party card service involved, so there is nothing that can 503.
+      - name: Render stats cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 tools/render_stats.py "${{ github.repository_owner }}" assets/generated \
+            || echo "stats render failed, keeping previous copies"
+
+      # 4. Snapshot the remaining third-party cards, with retries.
       - name: Cache stat cards
         env:
           USER: ${{ github.repository_owner }}
-          DARK: "bg_color=00000000&title_color=2f81f7&text_color=8b949e&icon_color=a371f7&border_color=30363d&ring_color=2f81f7&border_radius=6"
-          LIGHT: "bg_color=00000000&title_color=0969da&text_color=59636e&icon_color=8250df&border_color=d1d9e0&ring_color=0969da&border_radius=6"
         run: |
           mkdir -p assets/generated
 
@@ -70,14 +76,6 @@ jobs:
           }
 
           for mode in dark light; do
-            [ "$mode" = dark ] && theme="$DARK" || theme="$LIGHT"
-
-            fetch "https://github-readme-stats.vercel.app/api?username=$USER&show_icons=true&count_private=true&include_all_commits=true&rank_icon=github&$theme" \
-                  "assets/generated/stats-$mode.svg"
-
-            fetch "https://github-readme-stats.vercel.app/api/top-langs/?username=$USER&layout=compact&langs_count=8&hide=html,css&size_weight=0.5&count_weight=0.5&$theme" \
-                  "assets/generated/top-langs-$mode.svg"
-
             fetch "https://leetcard.jacoblin.cool/IshaanPotle?theme=$mode&ext=heatmap" \
                   "assets/generated/leetcode-$mode.svg"
           done
