@@ -20,20 +20,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Prepare output dir
+        run: mkdir -p assets/generated
+
       # 1. Contribution snake
       - name: Generate snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake-dark.svg?palette=github-dark&color_snake=#2f81f7
-            dist/snake-light.svg?palette=github-light&color_snake=#0969da
+            assets/generated/snake-dark.svg?palette=github-dark&color_snake=#2f81f7
+            assets/generated/snake-light.svg?palette=github-light&color_snake=#0969da
 
-      - name: Move snake into assets
-        run: |
-          mkdir -p assets/generated
-          mv dist/snake-dark.svg assets/generated/snake-dark.svg
-          mv dist/snake-light.svg assets/generated/snake-light.svg
+      # snk runs as root in Docker; hand the files back to the runner
+      - name: Fix ownership
+        run: sudo chown -R "$(id -u):$(id -g)" assets/generated
 
       # 2. 3D contribution calendar
       - name: Generate 3D contributions
