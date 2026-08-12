@@ -13,8 +13,8 @@
   <a href="https://www.linkedin.com/in/ishaan-potle-15b0741ba/">
     <img src="https://img.shields.io/badge/LinkedIn-0969da?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://ishaansantoshpotle.wixsite.com/portfolio">
-    <img src="https://img.shields.io/badge/Portfolio-1a7f37?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio" />
+  <a href="https://ishaanpotle.github.io/">
+    <img src="https://img.shields.io/badge/Portfolio-1a7f37?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" />
   </a>
   <a href="https://leetcode.com/IshaanPotle/">
     <img src="https://img.shields.io/badge/LeetCode-57606a?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode" />
