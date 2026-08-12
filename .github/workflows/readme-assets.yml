@@ -1,0 +1,96 @@
+name: Build README assets
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-assets
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 1. Contribution snake
+      - name: Generate snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#2f81f7
+            dist/snake-light.svg?palette=github-light&color_snake=#0969da
+
+      - name: Move snake into assets
+        run: |
+          mkdir -p assets/generated
+          mv dist/snake-dark.svg assets/generated/snake-dark.svg
+          mv dist/snake-light.svg assets/generated/snake-light.svg
+
+      # 2. 3D contribution calendar
+      - name: Generate 3D contributions
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      # 3. Snapshot the third-party stat cards so the README never 503s.
+      #    Transparent backgrounds + Primer colours so they sit flush on the page.
+      - name: Cache stat cards
+        env:
+          USER: ${{ github.repository_owner }}
+          DARK: "bg_color=00000000&title_color=2f81f7&text_color=8b949e&icon_color=a371f7&border_color=30363d&ring_color=2f81f7&border_radius=6"
+          LIGHT: "bg_color=00000000&title_color=0969da&text_color=59636e&icon_color=8250df&border_color=d1d9e0&ring_color=0969da&border_radius=6"
+        run: |
+          mkdir -p assets/generated
+
+          fetch () {
+            url="$1"; out="$2"
+            for attempt in 1 2 3 4 5; do
+              code=$(curl -sSL --max-time 45 -w '%{http_code}' -o "$out.tmp" "$url" || echo 000)
+              if [ "$code" = "200" ] && [ -s "$out.tmp" ] && grep -qi '<svg' "$out.tmp"; then
+                mv "$out.tmp" "$out"
+                echo "ok      $out"
+                return 0
+              fi
+              echo "retry $attempt ($code) $out"
+              sleep 15
+            done
+            rm -f "$out.tmp"
+            echo "SKIPPED $out (keeping previous copy)"
+          }
+
+          for mode in dark light; do
+            [ "$mode" = dark ] && theme="$DARK" || theme="$LIGHT"
+
+            fetch "https://github-readme-stats.vercel.app/api?username=$USER&show_icons=true&count_private=true&include_all_commits=true&rank_icon=github&$theme" \
+                  "assets/generated/stats-$mode.svg"
+
+            fetch "https://github-readme-stats.vercel.app/api/top-langs/?username=$USER&layout=compact&langs_count=8&hide=html,css&size_weight=0.5&count_weight=0.5&$theme" \
+                  "assets/generated/top-langs-$mode.svg"
+
+            fetch "https://leetcard.jacoblin.cool/IshaanPotle?theme=$mode&ext=heatmap" \
+                  "assets/generated/leetcode-$mode.svg"
+          done
+
+          fetch "https://streak-stats.demolab.com/?user=$USER&count_private=true&border_radius=6&background=00000000&border=30363d&stroke=30363d&ring=2f81f7&fire=a371f7&currStreakNum=e6edf3&sideNums=8b949e&currStreakLabel=2f81f7&sideLabels=8b949e&dates=6e7681" \
+                "assets/generated/streak-dark.svg"
+
+          fetch "https://streak-stats.demolab.com/?user=$USER&count_private=true&border_radius=6&background=00000000&border=d1d9e0&stroke=d1d9e0&ring=0969da&fire=8250df&currStreakNum=1f2328&sideNums=59636e&currStreakLabel=0969da&sideLabels=59636e&dates=6e7781" \
+                "assets/generated/streak-light.svg"
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets/generated profile-3d-contrib || true
+          git diff --staged --quiet || git commit -m "chore: refresh README assets [skip ci]"
+          git push

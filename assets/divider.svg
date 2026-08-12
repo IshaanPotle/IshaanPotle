@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="10" viewBox="0 0 1000 10" fill="none" role="img" aria-label="">
+  <defs><clipPath id="strip"><rect y="4" width="1000" height="2"/></clipPath></defs>
+  <rect y="4.5" width="1000" height="1" fill="#8b949e" opacity="0.35"/>
+  <g clip-path="url(#strip)">
+    <rect y="4" width="140" height="1" fill="#2f81f7">
+      <animate attributeName="x" values="-140;1000" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
